@@ -1,93 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YouTube Clone</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- -------------- Navbar ---------------  -->
-    <nav class="flex-dev">
-      <div class="nav-left flex-dev">
-        <img src="Images/menu.png" alt="menu" class="menu-icon" />
-        <img src="Images/logo.png" alt="logo" class="logo" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- -------------- Navbar ---------------  -->
+  <nav class="flex-dev">
+    <div class="nav-left flex-dev">
+      <img src="Images/menu.png" alt="menu" class="menu-icon" />
+      <img src="Images/logo.png" alt="logo" class="logo" />
+    </div>
+    <div class="nav-middle flex-dev">
+      <div class="search-box flex-dev">
+        <input type="text" placeholder="Search" />
+        <img src="Images/search.png" alt="search" />
       </div>
-      <div class="nav-middle flex-dev">
-        <div class="search-box flex-dev">
-          <input type="text" placeholder="Search" />
-          <img src="Images/search.png" alt="search" />
-        </div>
-        <img src="Images/voice-search.png" alt="voice" class="mic-icon" />
-      </div>
-      <div class="nav-right flex-dev">
-        <img src="Images/upload.png" alt="upload" />
-        <img src="Images/more.png" alt="more" />
-        <img src="Images/notification.png" alt="notification" />
-        <img src="Images/saurabh.jpg" alt="user" class="user-icon" />
-      </div>
-    </nav>
-    <!-- ------------------ Sidebar ------------ -->
-    <div class="sidebar">
-      <div class="shortcut-links">
-        <a href="">
-          <img src="Images/home.png" alt="home" />
-          <p>Home</p>
+      <img src="Images/voice-search.png" alt="voice" class="mic-icon" />
+    </div>
+    <div class="nav-right flex-dev">
+      <img src="Images/upload.png" alt="upload" />
+      <img src="Images/more.png" alt="more" />
+      <img src="Images/notification.png" alt="notification" />
+      <img src="Images/saurabh.jpg" alt="user" class="user-icon" />
+    </div>
+  </nav>
+  <!-- ------------------ Sidebar ------------ -->
+  <div class="sidebar">
+    <div class="shortcut-links">
+      <a href="">
+        <img src="Images/home.png" alt="home" />
+        <p>Home</p>
+      </a>
+      <a href="">
+        <img src="Images/explore.png" alt="Explore" />
+        <p>Explore</p>
+      </a>
+      <a href="">
+        <img src="Images/subscriprion.png" alt="Subscriprion" />
+        <p>Subscriprion</p>
+      </a>
+      <a href="">
+        <img src="Images/library.png" alt="Library" />
+        <p>Library</p>
+      </a>
+      <a href="">
+        <img src="Images/history.png" alt="History" />
+        <p>History</p>
+      </a>
+      <a href="">
+        <img src="Images/playlist.png" alt="Playlist" />
+        <p>Playlist</p>
+      </a>
+      <a href="">
+        <img src="Images/messages.png" alt="Messages" />
+        <p>Messages</p>
+      </a>
+      <a href="">
+        <img src="Images/show-more.png" alt="Show More" />
+        <p>Show More</p>
+      </a>
+      <hr />
+    </div>
+    <div class="subscribed-list">
+      <h3>SUBSCRIBED</h3>
+      <a href="">
+        <img src="Images/saurabh.jpg" alt="profile" />
+        <p>Saurabh Saini</p>
+      </a>
+      <a href="">
+        <img src="Images/simon.png" alt="Simon" />
+        <p>Simon Baker</p>
+      </a>
+      <a href="">
+        <img src="Images/tom.png" alt="Tom" />
+        <p>Tom Hardy</p>
+      </a>
+      <a href="">
+        <img src="Images/megan.png" alt="Megan" />
+        <p>Megan Ryan</p>
+      </a>
+      <a href="">
+        <img src="Images/cameron.png" alt="Cameron" />
+        <p>Cameron Diaz</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- ---------------------- Main ------------------  -->
+  <div class="container">
+    <div class="banner">
+      <img src="Images/banner.png" alt="banner" />
+    </div>
+
+    <div class="list-container">
+      <div class="vid-list">
+        <a href=""><img src="Images/thumbnail1.png" alt="thumbnail 1" class="thumbnail" />
         </a>
-        <a href="">
-          <img src="Images/explore.png" alt="Explore" />
-          <p>Explore</p>
-        </a>
-        <a href="">
-          <img src="Images/subscriprion.png" alt="Subscriprion" />
-          <p>Subscriprion</p>
-        </a>
-        <a href="">
-          <img src="Images/library.png" alt="Library" />
-          <p>Library</p>
-        </a>
-        <a href="">
-          <img src="Images/history.png" alt="History" />
-          <p>History</p>
-        </a>
-        <a href="">
-          <img src="Images/playlist.png" alt="Playlist" />
-          <p>Playlist</p>
-        </a>
-        <a href="">
-          <img src="Images/messages.png" alt="Messages" />
-          <p>Messages</p>
-        </a>
-        <a href="">
-          <img src="Images/show-more.png" alt="Show More" />
-          <p>Show More</p>
-        </a>
-        <hr />
-      </div>
-      <div class="subscribed-list">
-        <h3>SUBSCRIBED</h3>
-        <a href="">
+        <div class="flex-dev">
           <img src="Images/saurabh.jpg" alt="profile" />
-          <p>Saurabh Saini</p>
+          <div class="vid-info">
+            <a href="">Best channel to learn coding that help you to be a web
+              developer
+            </a>
+            <p>Easy Tutorials</p>
+            <p>15k Views &bull; 2 days</p>
+          </div>
+        </div>
+      </div>
+      <div class="vid-list">
+        <a href=""><img src="Images/thumbnail2.png" alt="thumbnail 2" class="thumbnail" />
         </a>
-        <a href="">
-          <img src="Images/simon.png" alt="Simon" />
-          <p>Simon Baker</p>
+        <div class="flex-dev">
+          <img src="Images/saurabh.jpg" alt="profile" />
+          <div class="vid-info">
+            <a href="">Best channel to learn coding that help you to be a web
+              developer
+            </a>
+            <p>Easy Tutorials</p>
+            <p>15k Views &bull; 2 days</p>
+          </div>
+        </div>
+      </div>
+      <div class="vid-list">
+        <a href=""><img src="Images/thumbnail3.png" alt="thumbnail 3" class="thumbnail" />
         </a>
-        <a href="">
-          <img src="Images/tom.png" alt="Tom" />
-          <p>Tom Hardy</p>
+        <div class="flex-dev">
+          <img src="Images/saurabh.jpg" alt="profile" />
+          <div class="vid-info">
+            <a href="">Best channel to learn coding that help you to be a web
+              developer
+            </a>
+            <p>Easy Tutorials</p>
+            <p>15k Views &bull; 2 days</p>
+          </div>
+        </div>
+      </div>
+      <div class="vid-list">
+        <a href=""><img src="Images/thumbnail4.png" alt="thumbnail 4" class="thumbnail" />
         </a>
-        <a href="">
-          <img src="Images/megan.png" alt="Megan" />
-          <p>Megan Ryan</p>
+        <div class="flex-dev">
+          <img src="Images/saurabh.jpg" alt="profile" />
+          <div class="vid-info">
+            <a href="">Best channel to learn coding that help you to be a web
+              developer
+            </a>
+            <p>Easy Tutorials</p>
+            <p>15k Views &bull; 2 days</p>
+          </div>
+        </div>
+      </div>
+      <div class="vid-list">
+        <a href=""><img src="Images/thumbnail5.png" alt="thumbnail 5" class="thumbnail" />
         </a>
-        <a href="">
-          <img src="Images/cameron.png" alt="Cameron" />
-          <p>Cameron Diaz</p>
+        <div class="flex-dev">
+          <img src="Images/saurabh.jpg" alt="profile" />
+          <div class="vid-info">
+            <a href="">Best channel to learn coding that help you to be a web
+              developer
+            </a>
+            <p>Easy Tutorials</p>
+            <p>15k Views &bull; 2 days</p>
+          </div>
+        </div>
+      </div>
+      <div class="vid-list">
+        <a href=""><img src="Images/thumbnail6.png" alt="thumbnail 6" class="thumbnail" />
         </a>
+        <div class="flex-dev">
+          <img src="Images/saurabh.jpg" alt="profile" />
+          <div class="vid-info">
+            <a href="">Best channel to learn coding that help you to be a web
+              developer
+            </a>
+            <p>Easy Tutorials</p>
+            <p>15k Views &bull; 2 days</p>
+          </div>
+        </div>
+      </div>
+      <div class="vid-list">
+        <a href=""><img src="Images/thumbnail7.png" alt="thumbnail 7" class="thumbnail" />
+        </a>
+        <div class="flex-dev">
+          <img src="Images/saurabh.jpg" alt="profile" />
+          <div class="vid-info">
+            <a href="">Best channel to learn coding that help you to be a web
+              developer
+            </a>
+            <p>Easy Tutorials</p>
+            <p>15k Views &bull; 2 days</p>
+          </div>
+        </div>
+      </div>
+      <div class="vid-list">
+        <a href=""><img src="Images/thumbnail8.png" alt="thumbnail 8" class="thumbnail" />
+        </a>
+        <div class="flex-dev">
+          <img src="Images/saurabh.jpg" alt="profile" />
+          <div class="vid-info">
+            <a href="">Best channel to learn coding that help you to be a web
+              developer
+            </a>
+            <p>Easy Tutorials</p>
+            <p>15k Views &bull; 2 days</p>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
